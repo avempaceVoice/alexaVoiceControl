@@ -43,7 +43,7 @@ app.intent('play', {
             "url": "http://radio.mosaiquefm.net:8000/mosalive"
         }
 
-        response.audioPlayerPlayStream("avempace", stream)
+        response.audioPlayerPlayStream("REPLACE_ALL", stream)
 
 
     }
