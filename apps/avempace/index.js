@@ -40,7 +40,7 @@ app.intent('play', {
         var stationName = request.slot('name')
         console.log('station name', stationName)
         stream = {
-            "url": "http://radio.mosaiquefm.net:8000/mosalive"
+            "url": "https://nfw.ria.ru/flv/audio.aspx?ID=6854085&amp;type=mp3"
         }
 
         response.audioPlayerPlayStream("REPLACE_ALL", stream)
