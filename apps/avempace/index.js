@@ -38,6 +38,7 @@ app.intent('play', {
 
     function(request, response) {
         var stationName = request.slot('name')
+        console.log('station name', stationName)
         stream = {
             "url": "http://radio.mosaiquefm.net:8000/mosalive"
         }
