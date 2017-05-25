@@ -54,4 +54,27 @@ app.intent('play', {
 );
 
 
+
+app.intent('stop', {
+
+        "utterances": [
+            "stop "
+        ]
+
+    },
+
+    function(request, response) {
+
+        console.log('stop called')
+
+
+        response.audioPlayerStop()
+        response.send()
+
+
+    }
+);
+
+
+
 module.exports = app;
