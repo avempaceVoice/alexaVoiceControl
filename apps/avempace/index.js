@@ -40,10 +40,14 @@ app.intent('play', {
         var stationName = request.slot('name')
         console.log('station name', stationName)
         stream = {
-            "url": "https://nfw.ria.ru/flv/audio.aspx?ID=6854085&amp;type=mp3"
+            "url": "https://nfw.ria.ru/flv/audio.aspx?ID=6854085&amp;type=mp3",
+            "token": "zef564ezf",
+            "offsetInMilliseconds": 0
+
         }
 
-        response.audioPlayerPlayStream("REPLACE_ALL", stream)
+        response.audioPlayerPlayStream("REPLACE_ALL", stream);
+        response.send()
 
 
     }
